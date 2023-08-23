@@ -4,12 +4,12 @@
 #This script allows the version code to be changed in an android build.gradle(app directory) file
 #Please specify a VERSION_CODE variable and value in the app center build environment variables in
 #the app center build settings pane online
-if 1
+if true
 then
-  echo "hello build script"
+  echo "hello build script1"
   exit
 fi
-
+  echo "hello build script2"
 
 #If no VERSION_CODE environment variable is found then the script will exit with 
 # a message to define the version code in app center environment variables
