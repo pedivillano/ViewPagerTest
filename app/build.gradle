@@ -5,11 +5,11 @@ plugins {
 
 android {
     namespace 'com.example.viewpagertest'
-    compileSdk 31
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.example.viewpagertest"
-        minSdk 27
+        minSdk 31
         targetSdk 33
         versionCode 1
         versionName "1.0"
