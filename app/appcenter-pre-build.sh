@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 
-#This script allows the version code to be changed in an android build.gradle(app directory) file
+#This script allows the version code to be changed in an android build.gradle.kts(app directory) file
 #Please specify a VERSION_CODE variable and value in the app center build environment variables in
 #the app center build settings pane online
 if true
@@ -19,8 +19,8 @@ then
 	exit
 fi
 
-#Identifies the build.gradle file in the app directory
-ANDROID_BUILD_GRADLE=$APPCENTER_SOURCE_DIRECTORY/app/build.gradle
+#Identifies the build.gradle.kts file in the app directory
+ANDROID_BUILD_GRADLE=$APPCENTER_SOURCE_DIRECTORY/app/build.gradle.kts
 
 if [ -e "$ANDROID_BUILD_GRADLE" ]
 then
@@ -28,7 +28,7 @@ then
 	cat $ANDROID_BUILD_GRADLE
 	echo "Updating version code to $VERSION_CODE in build.gradle file"
 
-#Finds the versionCode in build.gradle and replaces it with the $VERSION_CODE variable
+#Finds the versionCode in build.gradle.kts and replaces it with the $VERSION_CODE variable
 #defined in app center environment variables
 	sed -i '' 's/versionCode [0-9a-zA-Z -_]*/versionCode '$(($VERSION_CODE))'/' $ANDROID_BUILD_GRADLE
 
