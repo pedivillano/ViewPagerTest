@@ -4,16 +4,16 @@ plugins {
 }
 
 android {
-    namespace 'com.example.viewpagertest'
-    compileSdk 33
+//    namespace 'com.example.viewpagertest'
+    compileSdkVersion(33)
+
 
     defaultConfig {
         applicationId = "com.example.viewpagertest"
         minSdkVersion(29)
         targetSdkVersion(33)
-        versionCode 1
-        versionName "1.0"
-
+        versionCode = 1
+        versionName = "1.0"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
 
