@@ -119,87 +119,87 @@ android {
 
 dependencies {
 
-    implementation("androidx.core:core-ktx:1.9.0")
-    implementation("androidx.appcompat:appcompat:1.5.1")
-    implementation("androidx.activity:activity-ktx:1.6.1")
-    implementation("androidx.fragment:fragment-ktx:1.5.4")
-    implementation("com.google.android.material:material:1.7.0")
-    implementation("androidx.compose.ui:ui:$composeVersion")
-    implementation("androidx.compose.material:material:$composeVersion")
-    implementation("androidx.compose.ui:ui-tooling-preview:$composeVersion")
-    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
-    implementation("androidx.activity:activity-compose:1.7.0-alpha02")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-
-    // AddedF
-    implementation("androidx.datastore:datastore-preferences:1.0.0")
-    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
-    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
-    implementation("androidx.annotation:annotation:1.5.0")
-    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
-    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
-    implementation("androidx.legacy:legacy-support-v4:1.0.0")
-
-    // SMS Auth
-    implementation("com.google.android.gms:play-services-auth:17.0.0")
-    implementation("com.google.android.gms:play-services-auth-api-phone:17.4.0")
-
-    // Video Player
-    implementation("com.google.android.exoplayer:exoplayer-core:2.12.0")
-    implementation("com.google.android.exoplayer:exoplayer-dash:2.12.0")
-    implementation("com.google.android.exoplayer:exoplayer-ui:2.12.0")
-
-    // Hilt
-    implementation("com.google.dagger:hilt-android:2.44")
-    kapt("com.google.dagger:hilt-compiler:2.44")
-
-    // Retro fit
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-
-    // Retrofit Gson
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-
-    // Okhttp for interceptors
-    implementation("com.squareup.okhttp3:okhttp")
-
-    // Google Maps
-    implementation("com.google.android.gms:play-services-maps:18.0.2")
-
-    // JWT
-    api("io.jsonwebtoken:jjwt-api:0.11.5")
-    runtimeOnly("io.jsonwebtoken:jjwt-impl:0.11.5")
-    runtimeOnly("io.jsonwebtoken:jjwt-orgjson:0.11.5") {
-        exclude(group = "org.json", module = "json") //provided by Android natively`
-    }
-
-    // Animated Gif
-    // implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
-
-    // Edit Box with constant hint label
-    //    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
-
-    // Firebase Push Notifications
-    implementation(platform("com.google.firebase:firebase-bom:31.1.0"))
-    implementation("com.google.firebase:firebase-messaging-ktx:22.0.0")
-    implementation("com.google.firebase:firebase-crashlytics")
-    implementation("com.google.firebase:firebase-analytics")
-
-    // Network error responses
-    // implementation "com.github.haroldadmin:NetworkResponseAdapter:5.0.0"
-
-    // Room database ond others
-    implementation("androidx.constraintlayout:constraintlayout-core:1.0.4")
-    implementation("androidx.lifecycle:lifecycle-process:2.5.1")
-    implementation("androidx.room:room-common:2.4.2")
-    implementation("androidx.room:room-ktx:2.4.2")
-    kapt("androidx.room:room-compiler:2.4.2")
-
-
-    testImplementation("junit:junit:4.+")
-    androidTestImplementation("androidx.test.ext:junit:1.1.2")
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
-    androidTestImplementation("androidx.compose.ui:ui-test-junit4:$composeVersion")
-    debugImplementation("androidx.compose.ui:ui-tooling:$composeVersion")
+//    implementation("androidx.core:core-ktx:1.9.0")
+//    implementation("androidx.appcompat:appcompat:1.5.1")
+//    implementation("androidx.activity:activity-ktx:1.6.1")
+//    implementation("androidx.fragment:fragment-ktx:1.5.4")
+//    implementation("com.google.android.material:material:1.7.0")
+//    implementation("androidx.compose.ui:ui:$composeVersion")
+//    implementation("androidx.compose.material:material:$composeVersion")
+//    implementation("androidx.compose.ui:ui-tooling-preview:$composeVersion")
+//    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.5.1")
+//    implementation("androidx.activity:activity-compose:1.7.0-alpha02")
+//    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
+//
+//    // AddedF
+//    implementation("androidx.datastore:datastore-preferences:1.0.0")
+//    implementation("androidx.navigation:navigation-fragment-ktx:2.5.3")
+//    implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
+//    implementation("androidx.annotation:annotation:1.5.0")
+//    implementation("androidx.lifecycle:lifecycle-livedata-ktx:2.5.1")
+//    implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.5.1")
+//    implementation("androidx.legacy:legacy-support-v4:1.0.0")
+//
+//    // SMS Auth
+//    implementation("com.google.android.gms:play-services-auth:17.0.0")
+//    implementation("com.google.android.gms:play-services-auth-api-phone:17.4.0")
+//
+//    // Video Player
+//    implementation("com.google.android.exoplayer:exoplayer-core:2.12.0")
+//    implementation("com.google.android.exoplayer:exoplayer-dash:2.12.0")
+//    implementation("com.google.android.exoplayer:exoplayer-ui:2.12.0")
+//
+//    // Hilt
+//    implementation("com.google.dagger:hilt-android:2.44")
+//    kapt("com.google.dagger:hilt-compiler:2.44")
+//
+//    // Retro fit
+//    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+//
+//    // Retrofit Gson
+//    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+//
+//    // Okhttp for interceptors
+//    implementation("com.squareup.okhttp3:okhttp")
+//
+//    // Google Maps
+//    implementation("com.google.android.gms:play-services-maps:18.0.2")
+//
+//    // JWT
+//    api("io.jsonwebtoken:jjwt-api:0.11.5")
+//    runtimeOnly("io.jsonwebtoken:jjwt-impl:0.11.5")
+//    runtimeOnly("io.jsonwebtoken:jjwt-orgjson:0.11.5") {
+//        exclude(group = "org.json", module = "json") //provided by Android natively`
+//    }
+//
+//    // Animated Gif
+//    // implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.+'
+//
+//    // Edit Box with constant hint label
+//    //    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+//
+//    // Firebase Push Notifications
+//    implementation(platform("com.google.firebase:firebase-bom:31.1.0"))
+//    implementation("com.google.firebase:firebase-messaging-ktx:22.0.0")
+//    implementation("com.google.firebase:firebase-crashlytics")
+//    implementation("com.google.firebase:firebase-analytics")
+//
+//    // Network error responses
+//    // implementation "com.github.haroldadmin:NetworkResponseAdapter:5.0.0"
+//
+//    // Room database ond others
+//    implementation("androidx.constraintlayout:constraintlayout-core:1.0.4")
+//    implementation("androidx.lifecycle:lifecycle-process:2.5.1")
+//    implementation("androidx.room:room-common:2.4.2")
+//    implementation("androidx.room:room-ktx:2.4.2")
+//    kapt("androidx.room:room-compiler:2.4.2")
+//
+//
+//    testImplementation("junit:junit:4.+")
+//    androidTestImplementation("androidx.test.ext:junit:1.1.2")
+//    androidTestImplementation("androidx.test.espresso:espresso-core:3.3.0")
+//    androidTestImplementation("androidx.compose.ui:ui-test-junit4:$composeVersion")
+//    debugImplementation("androidx.compose.ui:ui-tooling:$composeVersion")
 }
 
 //apply plugin: 'com.google.gms.google-services'
